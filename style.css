@@ -17,10 +17,53 @@
     max-width: 500px;
     background: white;
     margin: 100px auto 20px;
-    text-align: center;
+    /* text-align: center; */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.title {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .subadd {
     margin: 50px auto 20px;
     /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+#add-button {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
 }
