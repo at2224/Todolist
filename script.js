@@ -39,3 +39,10 @@ function showTask() {
     list_container.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
+input_box.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        addTask();
+    }
+});
