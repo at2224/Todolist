@@ -10,9 +10,10 @@
     min-height: 100vh;
     padding: 10px;
     background: wheat;
+    
 }
 
-.add {
+.todo-app {
     width: 100%;
     max-width: 500px;
     background: white;
@@ -21,15 +22,11 @@
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-
-.title {
-    color: #002765;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.todo-app h2 {
+    text-align: center;
 }
 
-.subadd {
+.row {
     margin: 50px auto 20px;
     /* text-align: center; */
     display: flex;
@@ -60,18 +57,10 @@ input {
     border-radius: 40px;
 }
 
-ul {
-    
-    margin: 50px auto 20px;
-    padding: 0 20px; 
-    margin-top: 20px; 
-    width: 30%;
-}
-
 ul li {
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 45px; 
+    padding: 12px 8px 12px 50px; 
     user-select: none;
     cursor: pointer;
     background: #f8f8f8;
@@ -91,4 +80,33 @@ ul li::before{
     background-position: center;
     top:12px;
     left:15px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span{ 
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center; 
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+#list-container {
+    padding-top: 30px;
 }
